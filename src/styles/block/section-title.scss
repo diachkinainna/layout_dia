@@ -1,0 +1,43 @@
+.section-title {
+  @include font-poppins-semibold;
+
+  margin: 0 auto;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: left;
+  color: $dark-font-color;
+
+  &--big {
+    font-size: 44px;
+    line-height: 52px;
+    text-align: center;
+  }
+
+  &--contact-us {
+    margin-bottom: 48px;
+    color: $white-color;
+  }
+
+  &--send-us {
+    line-height: 42px;
+    margin-bottom: 48px;
+    color: $white-color;
+  }
+
+  &--about-us {
+    text-align: center;
+  }
+}
+
+.section-subtitle {
+  @include font-poppins-bold;
+
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 13px;
+  line-height: 19.5px;
+  letter-spacing: 3px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $light-font-color;
+}

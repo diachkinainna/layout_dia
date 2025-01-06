@@ -1,0 +1,62 @@
+.send-us__info {
+  @include font-poppins-semibold;
+
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  border: none;
+  outline: none;
+  padding: 0;
+  padding-bottom: 17px;
+  background: transparent;
+  width: 280px;
+  border-bottom: 1px solid $white-color;
+  height: 41px;
+  font-size: 15px;
+  line-height: 22.5px;
+  text-align: left;
+  color: rgba($white-color, 0.7);
+
+  &:hover {
+    border-color: $blue-color;
+  }
+
+  &:active {
+    color: rgba($white-color, 1);
+  }
+
+  &--message {
+    margin-bottom: 0;
+    resize: none;
+    overflow-y: hidden;
+  }
+
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px $dark-background-color inset;
+    -webkit-text-fill-color: rgba($white-color, 0.7);
+  }
+}
+
+.send-us__button {
+  @include font-poppins-semibold;
+
+  box-sizing: border-box;
+  padding: 0;
+  margin-top: 56px;
+  background-color: $blue-color;
+  height: 56px;
+  width: 280px;
+  color: $white-color;
+  font-size: 15px;
+  line-height: 22.5px;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  &:active {
+    background-color: $blue-color;
+  }
+}

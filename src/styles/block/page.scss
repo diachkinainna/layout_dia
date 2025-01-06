@@ -1,0 +1,14 @@
+.page {
+  margin: 0;
+  scroll-behavior: smooth;
+
+  &__body {
+    min-width: $phone-min-width;
+    background-color: $main-background-color;
+    margin: 0;
+  }
+}
+
+.container {
+  @include content-padding-inline;
+}

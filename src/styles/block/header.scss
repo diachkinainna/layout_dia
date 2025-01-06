@@ -1,0 +1,59 @@
+.header {
+  border-radius: 0 0 35px 35px;
+  background-color: $dark-background-color;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $white-color;
+  }
+
+  &__primary {
+    height: 359px;
+    margin: 48px 0;
+    color: $white-color;
+  }
+
+  &__primary-content {
+    @include font-open-sans-normal;
+
+    margin: 32px 0 0;
+    display: block;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+    height: 81px;
+  }
+
+  &__button {
+    @include font-poppins-semibold;
+
+    margin-top: 72px;
+    width: 280px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: $blue-color;
+    color: $white-color;
+    font-size: 15px;
+    line-height: 22.5px;
+    text-align: center;
+
+    @include hover(background-color, $hover-color);
+
+    &:active {
+      background-color: $blue-color;
+    }
+  }
+
+  &__title {
+    @include font-poppins-semibold;
+
+    margin: 0;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -2px;
+    text-align: left;
+  }
+}

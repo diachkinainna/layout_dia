@@ -1,0 +1,13 @@
+.about-us {
+  margin-top: $main-margin-top;
+
+  &__description {
+    @include font-open-sans-semibold;
+
+    margin-top: 24px;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: $main-font-color;
+  }
+}
