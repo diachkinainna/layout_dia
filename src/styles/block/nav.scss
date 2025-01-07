@@ -7,6 +7,31 @@
     list-style: none;
     padding: 0;
     margin: 0;
+
+    &--footer {
+      @include on-tablet {
+        flex-direction: row;
+        height: 20px;
+      }
+
+      @include on-small-desktop {
+        gap: 64px;
+        justify-content: end;
+      }
+    }
+
+    &--top-bar {
+      pointer-events: none;
+      display: none;
+
+      @include on-small-desktop {
+        display: flex;
+        flex-direction: row;
+        pointer-events: auto;
+        height: 20px;
+        gap: 48px;
+      }
+    }
   }
 
   &__item {
@@ -22,6 +47,7 @@
     text-decoration: none;
     font-size: 13px;
     line-height: 19.5px;
+    text-transform: uppercase;
     letter-spacing: 3px;
     text-align: left;
 
@@ -70,4 +96,8 @@
 
 .nav--footer {
   width: 113px;
+
+  @include on-tablet {
+    width: 100%;
+  }
 }

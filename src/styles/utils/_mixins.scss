@@ -5,8 +5,68 @@
   }
 }
 
+@mixin on-tablet {
+  @media (min-width: $tablet-min-width) {
+    @content;
+  }
+}
+
+@mixin on-small-desktop {
+  @media (min-width: $small-desktop-min-width) {
+    @content;
+  }
+}
+
+@mixin on-desktop {
+  @media (min-width: $desktop-min-width) {
+    @content;
+  }
+}
+
+@mixin on-large-screen {
+  @media (min-width: $large-screen-min-width) {
+    @content;
+  }
+}
+
 @mixin content-padding-inline() {
   padding-inline: 20px;
+
+  @include on-tablet {
+    padding-inline: 41px;
+  }
+
+  @include on-small-desktop {
+    padding-inline: 54px;
+  }
+
+  @include on-desktop {
+    padding-inline: 227px;
+  }
+
+  @include large-screen {
+    padding-inline: 707px;
+  }
+}
+
+@mixin margin-negative() {
+  margin-inline: -20px;
+
+  @include on-tablet {
+    margin-inline: -41px;
+  }
+
+  @include on-small-desktop {
+    margin-inline: -54px;
+  }
+
+  @include on-desktop {
+    margin-inline: -227px;
+  }
+
+  @include large-screen {
+    margin-inline: -707px;
+  }
 }
 
 @mixin font-poppins-semibold {

@@ -1,6 +1,7 @@
 .expertise {
+  @include margin-negative;
+
   padding: 72px 20px;
-  margin-inline: -20px;
   background: $white-color;
   border-radius: 30px;
   align-items: center;
@@ -12,5 +13,23 @@
     display: flex;
     flex-direction: column;
     gap: 56px;
+
+    @include on-tablet {
+      gap: 72px;
+    }
+
+    @include on-small-desktop {
+      flex-direction: row;
+      gap: 137px;
+    }
+  }
+
+  @include on-tablet {
+    padding: 128px 41px;
+    gap: 64px;
+  }
+
+  @include on-small-desktop {
+    padding: 128px 54px 134px;
   }
 }

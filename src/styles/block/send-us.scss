@@ -13,7 +13,7 @@
     border: none;
     outline: none;
     padding: 0;
-    max-width: 460px;
+    max-width: 362px;
     padding-bottom: 17px;
     background: transparent;
     border-bottom: 1px solid $white-color;
@@ -23,8 +23,21 @@
     text-align: left;
     color: rgba($white-color, 0.7);
 
+    @include on-tablet {
+      margin-bottom: 48px;
+      max-width: 370px;
+    }
+
+    @include on-desktop {
+      max-width: 460px;
+    }
+
     &--email {
       margin-top: 48px;
+
+      @include on-tablet {
+        margin-top: 56px;
+      }
     }
 
     &:hover {
@@ -62,6 +75,11 @@
     text-align: center;
     border: none;
     border-radius: 8px;
+
+    @include on-tablet {
+      width: 264px;
+      margin-top: 80px;
+    }
 
     &:hover {
       background-color: $hover-color;

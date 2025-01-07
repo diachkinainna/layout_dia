@@ -3,4 +3,9 @@
   flex-direction: column;
   gap: 120px;
   padding: 120px 0;
+
+  @include on-tablet {
+    gap: 148px;
+    padding: 148px 0 0;
+  }
 }

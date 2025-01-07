@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: space-between;
 
+  @include on-small-desktop {
+    padding-top: 48px;
+  }
+
   &__left {
     display: flex;
     align-items: center;
@@ -22,6 +26,11 @@
     background-image: url('../images/menu.png');
 
     @include hover(transform, scale(1.2));
+
+    @include on-small-desktop {
+      visibility: hidden;
+      pointer-events: none;
+    }
   }
 
   &__hire-us-link {
