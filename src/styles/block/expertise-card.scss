@@ -1,0 +1,34 @@
+.expertise-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image {
+    height: 166px;
+    width: 166px;
+
+    @include hover(transform, scale(1.2));
+  }
+
+  &__title {
+    @include font-poppins-semibold;
+
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: $dark-font-color;
+  }
+
+  &__content {
+    @include font-open-sans-normal;
+
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    max-width: 362px;
+    color: $main-font-color;
+  }
+}

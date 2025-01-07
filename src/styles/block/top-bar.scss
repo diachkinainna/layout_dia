@@ -7,20 +7,21 @@
   &__left {
     display: flex;
     align-items: center;
+    gap: 32px;
   }
 
   &__logo {
-    margin-right: 32px;
-    height: 28px;
-
     @include hover(transform, scale(1.2));
   }
 
   &__menu {
+    position: relative;
     display: block;
     height: 24px;
+    width: 24px;
+    background-image: url('../images/menu.png');
 
-    @include hover(transform, scale(1.4));
+    @include hover(transform, scale(1.2));
   }
 
   &__hire-us-link {
@@ -50,5 +51,9 @@
       border-radius: 4px;
       background-color: $blue-color;
     }
+  }
+
+  &__dropdown {
+    position: relative;
   }
 }

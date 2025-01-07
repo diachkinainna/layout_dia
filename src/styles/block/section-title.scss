@@ -1,31 +1,30 @@
 .section-title {
   @include font-poppins-semibold;
 
-  margin: 0 auto;
+  margin: 0;
   font-size: 32px;
   line-height: 48px;
   text-align: left;
   color: $dark-font-color;
 
   &--big {
+    margin-inline: auto;
     font-size: 44px;
     line-height: 52px;
     text-align: center;
   }
 
+  &--about-us {
+    text-align: center;
+  }
+
   &--contact-us {
-    margin-bottom: 48px;
     color: $white-color;
   }
 
   &--send-us {
     line-height: 42px;
-    margin-bottom: 48px;
     color: $white-color;
-  }
-
-  &--about-us {
-    text-align: center;
   }
 }
 

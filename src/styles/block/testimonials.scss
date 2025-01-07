@@ -1,114 +1,14 @@
-.testimonials-card {
-  margin-top: 24px;
-  background-color: $white-color;
-  padding: 32px 39px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 16px;
-  box-sizing: border-box;
-  width: 280px;
-  box-shadow: 0 9px 18px 0 rgba(37, 41, 49, 0.03);
-
-  @include hover(transform, scale(1.1));
-
-  &:hover {
-    box-shadow: 0 15px 30px 0 rgba(37, 41, 49, 0.2);
-  }
-
-  &__photo {
-    height: 196px;
-    width: 196px;
-    position: relative;
-  }
-
-  &__ava-photo {
-    position: absolute;
-    top: 43px;
-    left: 43px;
-    height: 110px;
-    width: 110px;
-    border-radius: 55px;
-  }
-
-  &__background {
-    padding: 4px 14px;
-    height: 188px;
-    width: 168px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__background-first {
-    align-self: flex-start;
-  }
-
-  &__background-second {
-    align-self: flex-end;
-  }
-
-  &__quote {
-    margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__quote-image {
-    height: 24px;
-    width: 24px;
-  }
-
-  &__quote-text {
-    @include font-open-sans-semibold;
-
-    margin: 0;
-    margin-top: 8px;
-    height: 80px;
-    font-size: 13px;
-    line-height: 19.5px;
-    text-align: center;
-    color: $main-font-color;
-  }
-
-  &__name {
-    margin-top: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__full-name {
-    @include font-open-sans-semibold;
-
-    margin: 0;
-    font-size: 13px;
-    line-height: 19.5px;
-    text-align: center;
-    color: $dark-font-color;
-  }
-
-  &__add-info {
-    @include font-poppins-bold;
-
-    margin: 0;
-    font-size: 13px;
-    line-height: 19.5px;
-    letter-spacing: 3px;
-    text-align: center;
-    color: $light-font-color;
-  }
-}
-
 .testimonials {
-  margin-top: $main-margin-top;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  &__top {
+    align-self: start;
+    width: 280px;
+  }
 
-  & .testimonials-card:first-of-type {
+  &__content {
     margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
 }
