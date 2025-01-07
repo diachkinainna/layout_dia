@@ -44,7 +44,7 @@
     padding-inline: 227px;
   }
 
-  @include large-screen {
+  @include on-large-screen {
     padding-inline: 707px;
   }
 }
@@ -64,7 +64,7 @@
     margin-inline: -227px;
   }
 
-  @include large-screen {
+  @include on-large-screen {
     margin-inline: -707px;
   }
 }
