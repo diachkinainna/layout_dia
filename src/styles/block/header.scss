@@ -1,19 +1,8 @@
 .header {
-  border-radius: 0 0 30px 30px;
-  background-color: $dark-background-color;
-  height: 893px;
-  position: relative;
-
-  @include on-small-desktop {
-    height: 800px;
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: $white-color;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $white-color;
 
   &__title {
     @include font-poppins-semibold;
@@ -90,5 +79,16 @@
     &:active {
       background-color: $blue-color;
     }
+  }
+}
+
+.header-wrapper {
+  border-radius: 0 0 30px 30px;
+  background-color: $dark-background-color;
+  height: 893px;
+  position: relative;
+
+  @include on-small-desktop {
+    height: 800px;
   }
 }

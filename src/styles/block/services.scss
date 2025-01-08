@@ -79,3 +79,11 @@
     }
   }
 }
+
+.services-wrapper {
+  margin-top: $phone-margin-top;
+
+  @include on-tablet {
+    margin-top: $main-margin-top;
+  }
+}

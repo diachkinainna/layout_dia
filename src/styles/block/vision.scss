@@ -1,17 +1,4 @@
 .vision {
-  @include margin-negative;
-
-  @include on-tablet {
-    background-image: url('../images/shapes.png');
-    background-size: auto 500px;
-    background-position: center 63px;
-    background-repeat: no-repeat;
-  }
-
-  background-color: $white-color;
-}
-
-.vision-content {
   margin-inline: auto;
   padding: 72px 0;
   box-sizing: border-box;
@@ -72,5 +59,18 @@
     &:active {
       background-color: $blue-color;
     }
+  }
+}
+
+.vision-wrapper {
+  background-color: $white-color;
+  margin-top: $phone-margin-top;
+
+  @include on-tablet {
+    background-image: url('../images/shapes.png');
+    background-size: auto 500px;
+    background-position: center 63px;
+    background-repeat: no-repeat;
+    margin-top: $main-margin-top;
   }
 }

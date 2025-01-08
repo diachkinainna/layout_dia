@@ -2,7 +2,6 @@
   scroll-behavior: smooth;
 
   &__body {
-    overflow-x: hidden;
     min-width: $phone-min-width;
     background-color: $main-background-color;
     margin: 0;
@@ -10,5 +9,18 @@
 }
 
 .container {
-  @include content-width;
+  width: 280px;
+  margin-inline: auto;
+
+  @include on-tablet {
+    width: 560px;
+  }
+
+  @include on-small-desktop {
+    width: 918px;
+  }
+
+  @include on-desktop {
+    width: 1148px;
+  }
 }

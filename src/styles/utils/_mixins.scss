@@ -29,43 +29,6 @@
   }
 }
 
-@mixin content-width() {
-  margin-inline: auto;
-  width: 280px;
-
-  @include on-tablet {
-    width: 560px;
-  }
-
-  @include on-small-desktop {
-    width: 918px;
-  }
-
-  @include on-desktop {
-    width: 1148px;
-  }
-}
-
-@mixin margin-negative() {
-  margin-inline: calc((100vw - 280px) / -2);
-
-  @include on-tablet {
-    margin-inline: calc((100vw - 560px) / -2);
-  }
-
-  @include on-small-desktop {
-    margin-inline: calc((100vw - 918px) / -2);
-  }
-
-  @include on-desktop {
-    margin-inline: calc((100vw - 1148px) / -2);
-  }
-
-  @include on-large-screen {
-    margin-inline: calc((100vw - 1148px) / -2);
-  }
-}
-
 @mixin font-poppins-semibold {
   font-family: Poppins, serif;
   font-weight: 600;
