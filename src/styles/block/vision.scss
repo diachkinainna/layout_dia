@@ -42,6 +42,7 @@
   &__button {
     @include font-poppins-semibold;
 
+    cursor: pointer;
     margin-top: 56px;
     background-color: $blue-color;
     height: 56px;

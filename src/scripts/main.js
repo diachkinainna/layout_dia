@@ -64,16 +64,4 @@ left.addEventListener('click', () => {
 function handleFormSubmit(event) {
   event.preventDefault();
   event.target.reset();
-
-  const message = document.getElementById('message');
-  message.style.display = 'block';
-
-  window.scrollTo({
-    top: 0
-  });
-
-  setTimeout(() => {
-    message.style.display = 'none';
-    submitButton.textContent = 'Send';
-  }, 3000);
 }

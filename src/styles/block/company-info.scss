@@ -1,6 +1,10 @@
 .company-info {
   margin: 0;
-  max-width: 362px;
+  width: 280px;
+
+  @include on-tablet {
+    width: 362px;
+  }
 
   &__list {
     list-style: none;

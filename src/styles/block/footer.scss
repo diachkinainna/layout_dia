@@ -15,16 +15,16 @@
   }
 
   @include on-small-desktop {
-    padding: 180px 54px 80px;
+    padding: 180px 140px 80px 54px;
     gap: 104px;
   }
 
   @include on-desktop {
-    padding: 180px 227px 80px;
+    padding: 180px 325px 80px 227px;
   }
 
   @include on-large-screen {
-    padding-inline: 707px;
+    padding-inline: 707px 805px;
   }
 
   &__top {
@@ -37,6 +37,7 @@
     }
 
     @include on-small-desktop {
+      justify-content: space-between;
       flex-direction: row;
       gap: 98px;
     }
