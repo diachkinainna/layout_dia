@@ -70,5 +70,5 @@ function handleFormSubmit(event) {
 
   setTimeout(() => {
     submitButton.textContent = 'Send';
-  }, 2000);
+  }, 3000);
 }
