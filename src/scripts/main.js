@@ -36,11 +36,13 @@ let count = 0;
 right.addEventListener('click', () => {
   if (count === 0) {
     slider.classList.add('slider--right');
+    right.style.cursor = 'initial';
     right.style.opacity = 0.3;
     count++;
   } else if (count === -1) {
     slider.classList.remove('slider--left');
     left.style.opacity = 1;
+    left.style.cursor = 'pointer';
     count++;
   } else {
     return;
@@ -51,9 +53,11 @@ left.addEventListener('click', () => {
   if (count === 0) {
     slider.classList.add('slider--left');
     left.style.opacity = 0.3;
+    left.style.cursor = 'initial';
     count--;
   } else if (count === 1) {
     slider.classList.remove('slider--right');
+    right.style.cursor = 'pointer';
     right.style.opacity = 1;
     count--;
   } else {

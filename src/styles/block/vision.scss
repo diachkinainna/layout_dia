@@ -1,8 +1,19 @@
 .vision {
   @include margin-negative;
 
+  @include on-tablet {
+    background-image: url('../images/shapes.png');
+    background-size: auto 500px;
+    background-position: center 63px;
+    background-repeat: no-repeat;
+  }
+
   background-color: $white-color;
-  padding: 72px 20px;
+}
+
+.vision-content {
+  margin-inline: auto;
+  padding: 72px 0;
   box-sizing: border-box;
   min-height: 571px;
   display: flex;
@@ -10,16 +21,7 @@
   align-items: center;
 
   @include on-tablet {
-    background-image: url('../images/shapes.png');
-
-    background-size: auto 500px;
-    background-position: center 63px;
-    background-repeat: no-repeat;
-    padding: 200px 41px 256px;
-  }
-
-  @include on-small-desktop {
-    padding-inline: 135px;
+    padding: 200px 0 256px;
   }
 
   &__text {

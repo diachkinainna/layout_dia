@@ -2,6 +2,7 @@
   scroll-behavior: smooth;
 
   &__body {
+    overflow-x: hidden;
     min-width: $phone-min-width;
     background-color: $main-background-color;
     margin: 0;
@@ -9,5 +10,5 @@
 }
 
 .container {
-  @include content-padding-inline;
+  @include content-width;
 }

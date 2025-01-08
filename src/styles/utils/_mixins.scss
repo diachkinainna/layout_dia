@@ -29,43 +29,40 @@
   }
 }
 
-@mixin content-padding-inline() {
-  padding-inline: 20px;
+@mixin content-width() {
+  margin-inline: auto;
+  width: 280px;
 
   @include on-tablet {
-    padding-inline: 41px;
+    width: 560px;
   }
 
   @include on-small-desktop {
-    padding-inline: 54px;
+    width: 918px;
   }
 
   @include on-desktop {
-    padding-inline: 227px;
-  }
-
-  @include on-large-screen {
-    padding-inline: 707px;
+    width: 1148px;
   }
 }
 
 @mixin margin-negative() {
-  margin-inline: -20px;
+  margin-inline: calc((100vw - 280px) / -2);
 
   @include on-tablet {
-    margin-inline: -41px;
+    margin-inline: calc((100vw - 560px) / -2);
   }
 
   @include on-small-desktop {
-    margin-inline: -54px;
+    margin-inline: calc((100vw - 918px) / -2);
   }
 
   @include on-desktop {
-    margin-inline: -227px;
+    margin-inline: calc((100vw - 1148px) / -2);
   }
 
   @include on-large-screen {
-    margin-inline: -707px;
+    margin-inline: calc((100vw - 1148px) / -2);
   }
 }
 

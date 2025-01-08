@@ -1,6 +1,4 @@
 .testimonials {
-  margin-inline: auto;
-
   &__top {
     width: 280px;
   }
@@ -20,6 +18,7 @@
     @include on-small-desktop {
       flex-direction: row;
       justify-content: center;
+      justify-content: space-between;
       margin-top: 85px;
       gap: 20px;
     }

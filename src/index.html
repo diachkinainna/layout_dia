@@ -49,7 +49,7 @@
   <body class="page__body">
     <header class="header">
       <div class="container">
-        <div class="header__content">
+        <div class="header__content container">
           <div class="top-bar">
             <div class="top-bar__left">
               <a href="#">
@@ -168,16 +168,20 @@
       <div class="slider">
         <div class="slider__content">
           <div class="slider__arrows">
-            <img
-              src="./images/slider/arrow-left.png"
-              alt="arrow-left"
-              class="arrow arrow--left"
-            />
-            <img
-              src="./images/slider/arrow-right.png"
-              alt="arrow-right"
-              class="arrow arrow--right"
-            />
+            <div class="arrow-wrapper">
+              <img
+                src="./images/slider/arrow-left.png"
+                alt="arrow-left"
+                class="arrow arrow--left"
+              />
+            </div>
+            <div class="arrow-wrapper">
+              <img
+                src="./images/slider/arrow-right.png"
+                alt="arrow-right"
+                class="arrow arrow--right"
+              />
+            </div>
           </div>
           <div class="slider__bottom">
             <h2 class="slider__title">Intro</h2>
@@ -205,67 +209,70 @@
             </p>
           </section>
 
-          <section
-            class="expertise"
-            id="expertise"
-          >
-            <h2 class="section-title section-title--big">Our expertise</h2>
-            <div class="expertise__content">
-              <article class="expertise-card">
-                <a
-                  href="#"
-                  class="expertise-card__link"
-                >
-                  <img
-                    src="./images/what-we-do/branding.png"
-                    alt="branding"
-                    class="expertise-card__image"
-                  />
-                </a>
-                <h3 class="expertise-card__title">Branding</h3>
-                <p class="expertise-card__content">
-                  We create additional value for companies, products, services
-                  as well as verbal and visual ways to deliver it to the
-                  audience.
-                </p>
-              </article>
-              <article class="expertise-card">
-                <a
-                  href="#"
-                  class="expertise-card__link"
-                >
-                  <img
-                    src="./images/what-we-do/communication.png"
-                    alt="communication"
-                    class="expertise-card__image"
-                  />
-                </a>
-                <h3 class="expertise-card__title">Communication</h3>
-                <p class="expertise-card__content">
-                  We strive to create communications that can increase media
-                  performance. We use everything — words, meanings, stories,
-                  art, movies.
-                </p>
-              </article>
-              <article class="expertise-card">
-                <a
-                  href="#"
-                  class="expertise-card__link"
-                >
-                  <img
-                    src="./images/what-we-do/strategy.png"
-                    alt="strategy"
-                    class="expertise-card__image"
-                  />
-                </a>
-                <h3 class="expertise-card__title">Strategy</h3>
-                <p class="expertise-card__content">
-                  We create business growth strategies, from the moment of its
-                  birth to the achievement of the necessary business indicators.
-                </p>
-              </article>
-            </div>
-          </section>
+          <div class="expertise-wrapper">
+            <section
+              class="expertise container"
+              id="expertise"
+            >
+              <h2 class="section-title section-title--big">Our expertise</h2>
+              <div class="expertise__content container">
+                <article class="expertise-card">
+                  <a
+                    href="#"
+                    class="expertise-card__link"
+                  >
+                    <img
+                      src="./images/what-we-do/branding.png"
+                      alt="branding"
+                      class="expertise-card__image"
+                    />
+                  </a>
+                  <h3 class="expertise-card__title">Branding</h3>
+                  <p class="expertise-card__content">
+                    We create additional value for companies, products, services
+                    as well as verbal and visual ways to deliver it to the
+                    audience.
+                  </p>
+                </article>
+                <article class="expertise-card">
+                  <a
+                    href="#"
+                    class="expertise-card__link"
+                  >
+                    <img
+                      src="./images/what-we-do/communication.png"
+                      alt="communication"
+                      class="expertise-card__image"
+                    />
+                  </a>
+                  <h3 class="expertise-card__title">Communication</h3>
+                  <p class="expertise-card__content">
+                    We strive to create communications that can increase media
+                    performance. We use everything — words, meanings, stories,
+                    art, movies.
+                  </p>
+                </article>
+                <article class="expertise-card">
+                  <a
+                    href="#"
+                    class="expertise-card__link"
+                  >
+                    <img
+                      src="./images/what-we-do/strategy.png"
+                      alt="strategy"
+                      class="expertise-card__image"
+                    />
+                  </a>
+                  <h3 class="expertise-card__title">Strategy</h3>
+                  <p class="expertise-card__content">
+                    We create business growth strategies, from the moment of its
+                    birth to the achievement of the necessary business
+                    indicators.
+                  </p>
+                </article>
+              </div>
+            </section>
+          </div>
 
           <section
             class="services"
@@ -439,162 +446,171 @@
           </section>
 
           <section class="vision">
-            <h2 class="section-title section-title--big section-title--vision">
-              Vision, Passion, Results
-            </h2>
-            <p class="vision__text">
-              We are sure that first-rate job is possible only if all three
-              components are united.
-            </p>
-            <button
-              class="vision__button"
-              type="button"
-              onclick="location.href='#send-us'"
-            >
-              Apply
-            </button>
+            <div class="vision-content container">
+              <h2
+                class="section-title section-title--big section-title--vision"
+              >
+                Vision, Passion, Results
+              </h2>
+              <p class="vision-content__text">
+                We are sure that first-rate job is possible only if all three
+                components are united.
+              </p>
+              <button
+                class="vision-content__button"
+                type="button"
+                onclick="location.href='#send-us'"
+              >
+                Apply
+              </button>
+            </div>
           </section>
         </div>
       </div>
     </main>
-    <footer class="footer">
-      <div class="footer__top">
-        <section
-          class="send-us"
-          id="send-us"
-        >
-          <h2 class="section-title section-title--send-us">
-            Send us a message
-          </h2>
-          <form
-            action="#"
-            onsubmit="handleFormSubmit(event)"
-            class="send-us__form"
+
+    <footer class="footer-wrapper">
+      <div class="footer container">
+        <div class="footer__top">
+          <section
+            class="send-us"
+            id="send-us"
           >
-            <input
-              class="send-us__info send-us__info--email"
-              type="email"
-              name="email"
-              placeholder="Your email"
-              required
+            <h2 class="section-title section-title--send-us">
+              Send us a message
+            </h2>
+            <form
+              action="#"
+              onsubmit="handleFormSubmit(event)"
+              class="send-us__form"
+            >
+              <input
+                class="send-us__info send-us__info--email"
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+              <input
+                class="send-us__info"
+                type="text"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+              <textarea
+                class="send-us__info send-us__info--message"
+                name="message"
+                placeholder="Your message"
+                required
+              ></textarea>
+              <button
+                class="send-us__button"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+          </section>
+          <section
+            class="company-info"
+            id="contact-us"
+          >
+            <h2 class="section-title section-title--contact-us">Contact us</h2>
+            <ul class="company-info__list">
+              <li class="company-info__type company-info__type--tel">
+                Call us
+              </li>
+              <a
+                href="tel:654 321 987"
+                class="company-info__value"
+              >
+                654 321 987
+              </a>
+              <li class="company-info__type">Visit us</li>
+              <a
+                href="https://maps.app.goo.gl/HsYm1PWkvkcvHukt8"
+                target="_blank"
+                class="company-info__value"
+              >
+                2905 West Drive, Buffalo Grove
+              </a>
+              <li class="company-info__type">Our socials</li>
+              <div class="company-info__logo-block">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="company-info__link facebook"
+                ></a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="company-info__link twitter"
+                ></a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="company-info__link instagram"
+                ></a>
+              </div>
+            </ul>
+          </section>
+        </div>
+
+        <section class="footer__bottom">
+          <a href="#">
+            <img
+              src="images/logo/air-logo.png"
+              alt="Air logo"
+              class="footer__logo"
             />
-            <input
-              class="send-us__info"
-              type="text"
-              name="name"
-              placeholder="Your name"
-              required
-            />
-            <textarea
-              class="send-us__info send-us__info--message"
-              name="message"
-              placeholder="Your message"
-              required
-            ></textarea>
-            <button
-              class="send-us__button"
-              type="submit"
-            >
-              Send
-            </button>
-          </form>
-        </section>
-        <section
-          class="company-info"
-          id="contact-us"
-        >
-          <h2 class="section-title section-title--contact-us">Contact us</h2>
-          <ul class="company-info__list">
-            <li class="company-info__type company-info__type--tel">Call us</li>
-            <a
-              href="tel:654 321 987"
-              class="company-info__value"
-            >
-              654 321 987
-            </a>
-            <li class="company-info__type">Visit us</li>
-            <a
-              href="https://maps.app.goo.gl/HsYm1PWkvkcvHukt8"
-              target="_blank"
-              class="company-info__value"
-            >
-              2905 West Drive, Buffalo Grove
-            </a>
-            <li class="company-info__type">Our socials</li>
-            <div class="company-info__logo-block">
-              <a
-                href="#"
-                target="_blank"
-                class="company-info__link facebook"
-              ></a>
-              <a
-                href="#"
-                target="_blank"
-                class="company-info__link twitter"
-              ></a>
-              <a
-                href="#"
-                target="_blank"
-                class="company-info__link instagram"
-              ></a>
-            </div>
-          </ul>
+          </a>
+          <nav class="nav nav--footer">
+            <ul class="nav__list nav__list--footer">
+              <li class="nav__item">
+                <a
+                  href="#about-us"
+                  class="nav__link"
+                >
+                  About us
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="#"
+                  class="nav__link"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="#testimonials"
+                  class="nav__link"
+                >
+                  Testimonials
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="#services"
+                  class="nav__link"
+                >
+                  Services
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="#contact-us"
+                  class="nav__link"
+                >
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </nav>
         </section>
       </div>
-
-      <section class="footer__bottom">
-        <a href="#">
-          <img
-            src="images/logo/air-logo.png"
-            alt="Air logo"
-            class="footer__logo"
-          />
-        </a>
-        <nav class="nav nav--footer">
-          <ul class="nav__list nav__list--footer">
-            <li class="nav__item">
-              <a
-                href="#about-us"
-                class="nav__link"
-              >
-                About us
-              </a>
-            </li>
-            <li class="nav__item">
-              <a
-                href="#"
-                class="nav__link"
-              >
-                Home
-              </a>
-            </li>
-            <li class="nav__item">
-              <a
-                href="#testimonials"
-                class="nav__link"
-              >
-                Testimonials
-              </a>
-            </li>
-            <li class="nav__item">
-              <a
-                href="#services"
-                class="nav__link"
-              >
-                Services
-              </a>
-            </li>
-            <li class="nav__item">
-              <a
-                href="#contact-us"
-                class="nav__link"
-              >
-                Contact us
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </section>
     </footer>
 
     <script src="scripts/main.js"></script>

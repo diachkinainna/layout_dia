@@ -1,10 +1,8 @@
 .services {
-  margin-inline: auto;
-
   @include on-small-desktop {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+
     padding-top: 103px;
     gap: 176px;
 
@@ -15,7 +13,6 @@
 
   &__top {
     width: 282px;
-    min-width: 266px;
     align-self: start;
 
     @include on-tablet {
@@ -60,7 +57,8 @@
     gap: 24px;
 
     @include on-tablet {
-      max-width: 600px;
+      align-self: flex-end;
+      width: 560px;
       gap: 30px;
       flex-flow: row wrap;
       place-content: flex-end center;
@@ -71,10 +69,12 @@
     }
 
     @include on-small-desktop {
+      width: 448px;
       gap: 20px;
     }
 
     @include on-desktop {
+      width: 558px;
       gap: 30px;
     }
   }

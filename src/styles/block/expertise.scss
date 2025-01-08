@@ -1,9 +1,12 @@
-.expertise {
+.expertise-wrapper {
   @include margin-negative;
 
-  padding: 72px 20px;
   background: $white-color;
   border-radius: 30px;
+}
+
+.expertise {
+  padding: 72px 0;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -11,6 +14,7 @@
 
   &__content {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 56px;
 
@@ -20,16 +24,15 @@
 
     @include on-small-desktop {
       flex-direction: row;
-      gap: 137px;
+      justify-content: space-between;
     }
   }
 
   @include on-tablet {
-    padding: 128px 41px;
-    gap: 64px;
+    padding: 128px 0;
   }
 
   @include on-small-desktop {
-    padding: 128px 54px 134px;
+    padding: 128px 0 134px;
   }
 }
