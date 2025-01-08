@@ -65,10 +65,15 @@ function handleFormSubmit(event) {
   event.preventDefault();
   event.target.reset();
 
-  const submitButton = event.target.querySelector('button');
-  submitButton.textContent = 'Sent successfully';
+  const message = document.getElementById('message');
+  message.style.display = 'block';
+
+  window.scrollTo({
+    top: 0
+  });
 
   setTimeout(() => {
+    message.style.display = 'none';
     submitButton.textContent = 'Send';
   }, 3000);
 }

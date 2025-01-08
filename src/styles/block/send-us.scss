@@ -82,7 +82,7 @@
     }
 
     @include hover(background-color, $hover-color);
-  
+
     &:hover {
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     }
