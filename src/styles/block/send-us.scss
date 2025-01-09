@@ -44,9 +44,7 @@
       }
     }
 
-    &:hover {
-      border-color: $blue-color;
-    }
+    @include hover (border-color, $blue-color);
 
     &:active {
       color: rgba($white-color, 1);
@@ -80,6 +78,7 @@
     text-align: center;
     border: none;
     border-radius: 8px;
+    transition: $transform-time;
 
     @include on-tablet {
       width: 264px;

@@ -60,6 +60,7 @@
     font-size: 15px;
     line-height: 22.5px;
     text-align: center;
+    transition: $transform-time;
 
     @include on-tablet {
       width: 264px;

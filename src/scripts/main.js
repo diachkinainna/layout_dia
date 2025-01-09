@@ -64,8 +64,3 @@ left.addEventListener('click', () => {
     return;
   }
 })
-
-function handleFormSubmit(event) {
-  event.preventDefault();
-  event.target.reset();
-}

@@ -34,9 +34,4 @@
 .expertise-wrapper {
   background: $white-color;
   border-radius: 30px;
-  margin-top: $phone-margin-top;
-
-  @include on-tablet {
-    margin-top: $main-margin-top;
-  }
 }

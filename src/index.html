@@ -194,7 +194,7 @@
     </header>
 
     <main class="main">
-      <div class="container about-us-wrapper">
+      <div class="container">
         <section
           class="about-us"
           id="about-us"
@@ -275,7 +275,7 @@
         </div>
       </div>
 
-      <div class="container services-wrapper">
+      <div class="container">
         <section
           class="services"
           id="services"
@@ -370,7 +370,7 @@
         </section>
       </div>
 
-      <div class="container testimonials-wrapper">
+      <div class="container">
         <section
           class="testimonials"
           id="testimonials"
@@ -447,22 +447,23 @@
       </div>
 
       <section class="vision-wrapper">
-        <div class="container"></div>
-        <div class="vision">
-          <h2 class="section-title section-title--big section-title--vision">
-            Vision, Passion, Results
-          </h2>
-          <p class="vision__text">
-            We are sure that first-rate job is possible only if all three
-            components are united.
-          </p>
-          <button
-            class="vision__button"
-            type="button"
-            onclick="location.href='#send-us'"
-          >
-            Apply
-          </button>
+        <div class="container">
+          <div class="vision">
+            <h2 class="section-title section-title--big section-title--vision">
+              Vision, Passion, Results
+            </h2>
+            <p class="vision__text">
+              We are sure that first-rate job is possible only if all three
+              components are united.
+            </p>
+            <button
+              class="vision__button"
+              type="button"
+              onclick="location.href='#send-us'"
+            >
+              Apply
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -480,7 +481,7 @@
               </h2>
               <form
                 action="#"
-                onsubmit="handleFormSubmit(event)"
+                onsubmit="this.reset(); return false;"
                 class="send-us__form"
               >
                 <input
@@ -602,7 +603,7 @@
                 </li>
                 <li class="nav__item">
                   <a
-                    href="#contact-us"
+                    href="#send-us"
                     class="nav__link"
                   >
                     Contact us
